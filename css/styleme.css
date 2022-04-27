@@ -1,0 +1,30 @@
+
+body {
+    background-color: gainsboro;
+    color :midnightblue;
+}
+.container {
+    width: 50%;
+    left: 25%;
+}
+#my_profil_image {
+    width: 20%;
+
+}
+p , ul {
+    font-family : 'Arial Narrow', Arial, sans-serif;
+}
+em + span {
+    font-style :calc();
+    text-decoration: underline;
+}
+li em {
+    font-weight : 700;
+}
+blockquote {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+h1:hover, h2:hover, h3:hover, h4, h5:hover, h6 :hover {
+    color :red;
+}
