@@ -1,0 +1,56 @@
+.header-local {
+    background-color : lightblue;
+    height : 150px;
+    text-align : center;
+}
+.footer-local {
+    background-color : #304d45;
+}
+
+.list-menu {
+    background-color : grey;
+}
+@media screen and (max-width: 600px) {
+    .column-1-local {
+        flex-shrink : 0.5;
+        order: 1;
+        height : 150px;
+        border : 2px solid;
+        background-color : grey;
+    }
+    .column-2-local {
+        width : 600px;
+        order: 2;
+        height : 150px;
+        border : 2px solid;
+        background-color : rgba(156, 147, 147, 0.726);
+    }
+    .column-3-local {
+        flex-shrink : 0.5;
+        order: 1;
+        height : 150px;
+        border : 2px solid;
+        background-color : rgba(156, 147, 147, 0.418);
+    }
+    
+}
+@media (min-width: 601px) {
+    .column-1-local {
+        order: 1;
+        height : 150px;
+        border : 2px solid;
+        background-color : grey;
+    }
+    .column-2-local {
+        order: 2;
+        height : 150px;
+        border : 2px solid;
+        background-color : rgba(156, 147, 147, 0.726);
+    }
+    .column-3-local {
+        order: 3;
+        height : 150px;
+        border : 2px solid;
+        background-color : rgba(156, 147, 147, 0.418);
+    }
+}
