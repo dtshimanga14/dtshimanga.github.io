@@ -707,14 +707,7 @@ function asciiAnimation(data) {
     },data);
 }
 function onFontSizeSelected () {
-    let size = 0;
-    if (this.value == "Tiny") size = 7;
-    else if (this.value == "Small") size = 7;
-    else if (this.value == "Medium") size = 12;
-    else if (this.value == "Large") size = 16;
-    else  size = 24;
-
-    document.getElementById("text-area").style.fontSize = size + 'pt';
+    document.getElementById("text-area").style.fontSize = this.value + 'pt';
 }
 window.onload = function() {
     let startButt = document.getElementById("start");
