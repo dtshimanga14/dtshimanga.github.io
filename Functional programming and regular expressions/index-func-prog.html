@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>W2D2 Quiz</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+        </script>
+        <script>
+
+        </script>
+        <script src="code.js"></script>
+        <script>
+            //4 Define a function sum() and a function multiply() that sums and 
+            //multiplies (respectively) all the numbers in an array of numbers
+            function sum(arr) {
+                return arr.reduce((acc,d) => acc += d);
+            }
+            function multiply(arr) {
+                return arr.reduce((acc,d) => acc *= d);
+            }
+            //5 Define a function reverse() that computes the reversal of a string.
+            function reverse(str) {
+                return str.split('').reverse().reduce((acc,d) => acc += d);
+            }
+            /* 7 Write a function filterLongWords() that takes an array of words and an integer i and 
+                returns the array of words that are longer than i. */
+            function filterLongWords(arr,i) {
+                return arr.filter(e => e.length > i);
+            }
+            console.log(sum([1,2,3,4]));
+            console.log(multiply([1,2,3,4]));
+            console.log(reverse("hello world"));
+            console.log(filterLongWords(["wu","john","david"],2));
+
+            describe("sum", () => {
+                it("given an array of number returns the sum of all array numbers", () => {
+                    assert.equal(sum([1,2,3,4]), 10);
+                });
+                it("multiplies all the numbers in an array of numbers",
+                    () => {
+                        assert.equal(multiply([1,2,3,4]),24);
+                });
+                it("given a string, return the reversal of a string",
+                    () => {
+                        assert.equal(reverse("hello world"),"dlrow olleh");
+                });
+                it("given array of words and an integer i and returns the array of words that are longer than i",
+                    () => {
+                        assert.deepEqual(filterLongWords(["wu","john","david"],2),["john","david"]);
+                });
+            });
+
+        </script>
+        </head>
+
+        <body>
+        <div id="mocha"></div>
+        <script>
+        mocha.run();
+
+        </script>
+    </body>
+</html>
