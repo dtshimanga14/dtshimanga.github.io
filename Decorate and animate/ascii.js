@@ -46,7 +46,7 @@ function onStop () {
 }
 function onCheck () {
     clearInterval(timer);
-    speed = document.getElementById("turbo").checked == true ?  50 : 2500;
+    speed = document.getElementById("turbo").checked == true ?  50 : 250;
     let start = Date.now(); 
     timer = setInterval(function() {
         let timePassed = Date.now() - start;
