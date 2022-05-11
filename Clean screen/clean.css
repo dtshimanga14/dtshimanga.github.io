@@ -1,0 +1,15 @@
+
+.circle {
+    position: relative;
+    display: inline-block;
+    top : 46%;
+    left : 47%;
+    background-color: red;
+    width : 50px;
+    height : 50px;
+    border-radius: 50px;
+}
+.single-input {
+    display: block;
+    width: 100px;
+}
