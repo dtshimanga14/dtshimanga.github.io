@@ -1,7 +1,7 @@
 
 let timer = null;
 let content = "";
-let speed = 2500;
+let speed = 250;
 let i;
 let args;
 
@@ -32,6 +32,7 @@ function onChoose () {
     
     if (timer != null ) clearInterval(timer);
     content = document.getElementById("text-area").value;
+    document.getElementById("stop").disabled = false;
     let args = ANIMATIONS[this.value];
     document.getElementById("text-area").value = args;
 
@@ -65,5 +66,26 @@ window.onload = function() {
     document.getElementById("animation").onchange = onChoose;
     document.getElementById("turbo").onchange = onCheck;
     document.getElementById("fontsize").onchange = onFontSizeSelected;
+    tester();
 
+}
+
+function sum(x,y) {
+    return x + y;
+}
+function substract(x,y) {
+    return x - y;
+}
+function tester() {
+    describe("sum function", function (){
+        it("return the sum of two numbers", function () {
+            assert.equal(sum(2,7),9);
+        });
+    });
+    describe("substract function",function () {
+        it("return the substract of two numbers",function () {
+            assert.equal(substract(2,7),-5);
+        });
+    });
+    mocha.run();
 }
