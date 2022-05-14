@@ -7,6 +7,19 @@
 		<link href="ascii.css" type="text/css" rel="stylesheet">
 		<script src="animations.js" type="text/javascript"></script>
 		<script src="ascii.js" type="text/javascript"></script>
+        <!-- add mocha css, to show results -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+        <!-- add mocha framework code -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+        <script>
+            mocha.setup('bdd'); // minimal setup
+        </script>
+        <!-- add chai -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+        <script>
+            // chai has a lot of stuff, let's make assert global
+            let assert = chai.assert;
+        </script>
     </head>
 	
     <body>
@@ -56,6 +69,6 @@
 		<img src="jslint.png" alt="JavaScript Lint">
 			</a>
         </div>
-    <div id="mocha"></div>
+    <div class="mocha"></div>
 
 </body></html>
