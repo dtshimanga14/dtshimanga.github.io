@@ -1,0 +1,55 @@
+
+
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const session = require("express-session");
+var app = express();
+
+app.use(express.json())
+ .use(cookieParser())
+ .use(session({ secret : "secret"}))
+ .use('/css', express.static(path.join(__dirname, 'css')))
+ .use(express.urlencoded({ extended : true }))
+ .get('/',(req,res) => {
+     
+    const date = new Date();
+    const hour = date.getHours();
+    let tag = (hour >=  6 && hour <=  18) ? "day" : "night";
+
+    res.send(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="css/${tag}.css" rel="stylesheet" />
+            <title>Home page</title>
+        </head>
+        <body>
+            <div class="container">
+                <form method="post" action="/result">
+                    <label>Name</label> <input type="text" name="name"/>
+                    <label>Age</label> <input type="text" name="age"/>
+                    <input type="submit" value="Submit Query" />
+                </form>
+            </div>
+        </body>
+        </html>
+    `);
+
+  }).post('/result',(req,res) =>{
+        let form = req.body;
+        if(!req.session.name) 
+            req.session.name = form.name;
+        if(!req.session.age) 
+            req.session.age = form.age;
+        
+        res.redirect("/output");
+  }).get('/output',(req,res) => {
+     res.send(`Welcome ${req.session.name} and your age is ${req.session.age}`);
+  })
+  .listen(3000,() => {
+    console.log("welcome to our w3d4 assignments ");
+});
