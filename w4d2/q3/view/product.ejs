@@ -1,0 +1,27 @@
+<%- include('header.ejs') %>
+
+    <h3 class="text-center " id="mytitle">Available Products</h3>
+    <div id="msg">
+
+    </div>
+    <a href="/shoppingcart">View Cart</a>
+    <% for( let i in products) { %>
+    <div class="col-sm-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Product_Name: <%= products[i].product_name %></h5>
+          <p class="card-text">ID: <%= products[i].id %></p>
+          <p class="card-text"> Price: $<%= products[i].price %></p>
+          <p class="card-text"> Product_Desc:<br> <%= products[i].desc %></p>
+          <form method="POST">
+            <input type="hidden" id="prodName" name="prodName" value="<%=products[i].product_name %>">
+            <input type="hidden" id="prodPrice" name="prodPrice" value="<%=products[i].price %>">
+            <input type="submit" class="btn btn-primary" value="Add to Cart"/>
+        </form>
+        </div>
+      </div>
+    </div>
+    <% } %>
+ 
+
+<%- include('footer.ejs') %>
