@@ -2,7 +2,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
-
+const mod = require("./mod");
     var app = express();
 
     const computers = [
@@ -31,12 +31,15 @@ const bodyParser = require("body-parser");
     .get("/",(req,res) => {
         res.render("app");
 
-    }).post("/data",(req,res) => {
-        let body = req.body;
+    }).get("/data",(req,res) => {
+        let body = req.query;
         let data = computers[body.id-1];
-        console.log(data);
+        console.log("object body" + req.body.id);
+        console.log("object params" + req.params.id);
+        console.log("object query" + req.query.id);
         res.send(data);
     })
     .listen(3000,() => {
-        console.log("welcome");
+        console.log((new mod()).sum(3,5));
+        console.log((new mod()).substract(3,5));
     })

@@ -1,0 +1,134 @@
+#logo{
+    width: 10%;
+}
+
+#container{
+    display: grid;
+    grid-template-areas:
+    "h h h h h"
+    "n n n n n"
+    "s b b b b"
+    "s b b b b"
+    "s b b b b"
+    "s b b b b"
+    "f f f f f"
+    "c c c c c";
+
+    background-color: #fff;
+    color: #1d1d1d;
+    font-family: Questrial,sans-serif;
+}
+
+a{
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+#header{
+    grid-area: h;
+    padding: 5%;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+#nav{
+    grid-area: n;
+    padding: 2%;
+    background-color: #f7f7f7;
+    display: flex;
+}
+#cart{
+    width: 35%;
+}
+
+#basket{
+    width: auto;
+    margin: auto;
+    margin-left: 90%;
+}
+
+#side{
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: fit-content;
+    margin-left: 30%;
+    line-height: 200%;
+}
+
+#body{
+    grid-area: b;
+    width: auto;
+    margin: auto;
+    padding: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+#footer{
+    grid-area: f;
+    display: flex;
+}
+#footer > div{
+    width: auto;
+    margin: auto;
+}
+
+#copyright{
+    grid-area: c;
+    width: auto;
+    margin: auto;
+    padding: 10%;
+}
+
+#icon{
+    width: 70%;
+}
+
+#listing{
+    text-align: center;
+    flex: 30%;
+}
+
+#pdisplay{
+    display: flex;
+}
+
+#pdisplay > img{
+    width: 50%;
+    margin-right: 15%;
+}
+
+#atc{
+    color: #f7f7f7;
+    background-color: #1d1d1d;
+    padding: 10%;
+    width: fit-content;
+}
+
+#lis{
+    margin: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#cit{
+    display: flex;
+    vertical-align: bottom;
+}
+#cit > img{
+    display: inline;
+    width: 25%;
+}
+#cit > h2{
+    display: inline;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+#cit > p{
+    display: inline;
+    padding-left: 5%;
+    padding-top: 11%;
+}

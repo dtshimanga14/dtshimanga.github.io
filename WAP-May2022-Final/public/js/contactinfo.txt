@@ -1,0 +1,6 @@
+    street: 1000 N 4th St.
+    city: Fairfield"
+    state: IA
+    zip: 52557
+    phone: (641)-534-1295
+    email: help.miu.edu

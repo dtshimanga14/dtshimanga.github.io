@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Store</title>
+    <link rel="stylesheet"  href="./css/style.css">
+  </head>
+  <body>
+
+    <div id="container">
+      <%- include ('header.ejs') %>
+      <%- include ('navigation.ejs') %>
+        <div id="body">
+          <div id="pdisplay">
+            <img src=<%=p.pic%>>
+            <div id="details">
+              <h2><%=p.name%></h2>
+              <p><%=p.description%></p>
+              <p>$<%=p.price%></p>
+              <form method="post" action="/add">
+                <input type="hidden" name="i" value=<%=i%>>
+                <button id="atc" type="submit">Add to cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <%- include ('footer.ejs') %>
+        <%- include ('copyright.ejs') %>
+    </div>
+	
+  </body>
+</html>

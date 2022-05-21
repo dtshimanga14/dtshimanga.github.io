@@ -2,7 +2,7 @@
 $(() => {
     function onPost() {
         let id = this.id;
-        $.post("/data",{ id },onSuccess);
+        $.get("/data",{ id },onSuccess);
     }
     const onSuccess = (data) => {
         $("#cpu").text(data.cpuSpeed);
