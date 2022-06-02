@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Store</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet"  href="./css/home.css">
+    <link rel="stylesheet"  href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/uploader.js"></script>
+  </head>
+  <body>
+    <div id="home">
+      <div id="header">
+      </div>
+      <div id="nav">
+        <%- include ('navigation.ejs') %>
+      </div>
+      <div id="side"></div>
+      <div id="core">
+        <div class="pre-viewing-image">
+          <img src=""  id="zoningImage"/>
+        </div>
+        <form  method="post" enctype="multipart/form-data" action="/addPicture">
+          <div class="custom-file mb-3">
+            <input type="file" name="file" id="file1" class="visually-hidden"/>
+            <label class="" htmlFor="file1" id="file-label">Choose file</label>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">name</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">price</label>
+            <input type="number" class="form-control" id="price"  name="price">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">quantity availables</label>
+            <input type="number" class="form-control" id="quantity" name="quantity">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">description</label>
+            <textarea class="form-control" id="description" rows="3" name="description">
+            </textarea>
+          </div>
+          <input type="submit" value="Submit" id="submitButt"/>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

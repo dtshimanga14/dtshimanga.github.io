@@ -1,53 +1,148 @@
 const req = require('express/lib/request');
 const res = require('express/lib/response');
 const path = require("path");
-/*import express here --->*/ const express = require("express");
+
+const crypto = require("crypto");
+const mongoose = require("mongoose");
+const multer = require("multer");
+const { GridFsStorage } = require("multer-gridfs-storage");
+const Grid = require('gridfs-stream');
+const http = require("http");
+const fs = require("fs");
+const url = require("url");
+const cors = require("cors");
+const formidable = require('formidable');
+
+/*import express here --->*/ 
+const express = require("express");
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const { MongoClient } = require("mongodb");
-/*import product here --->*/const product = require("./product");
+/*import product here --->*/
+const product = require("./product");
 
-const products = [new product("Clock", "To tell the time.", 15, 'https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bdda7d87988621de332dd_simply-productimg-6.jpg'),
-new product("Chair", "To sit on.", 200, 'https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bde965d8bac2ad7160b2e_simply-productimg-4.jpg'),
-new product("Light", "To see things.", 394, "https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bdf797c41e5725aee16df_simply-productimg-1.jpg"),
-new product("Table", "To put things on.", 302, "https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bdf006640d06648846d06_simply-productimg-3.jpg"),
-new product("Zebra Frame", "A picture frame showcasing zebra skin.", 44934, "https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bdf24dec3494629cc1926_simply-productimg-7.jpg"),
-new product("Sofa", "To chill on.", 230, "https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bdde6c1617c0acf787ae3_simply-productimg-2.jpg"),
-new product("Dining Chair", "To sit on while dining", 34, "https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bdeefdec349268ccc173b_simply-productimg-9.jpg"),
-new product("Wooden Chair", "To sit on, but less comfortably.", 232, "https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bde857c41e5fb5dee10b9_simply-productimg-5.jpg"),
-new product("Bowls", "To serve soup in.", 2, "https://assets.website-files.com/5d0754d8b6e7f897e55ae9bc/5e4bde13dec3492863cc1310_simply-productimg-8.jpg")]
-
-const uri = "mongodb://localhost:27017";
-const client = new MongoClient(uri);
+const mongoURI = "mongodb://localhost:27017";
+const client = new MongoClient(mongoURI);
 /*initialize your app here --->*/var app = express();
 /*set up the view engine here --->*/app.set('view engine','ejs');
 /*set up the view engine here --->*/app.set('views',path.join(__dirname,'views'));
 
-async function run() {
-    try {
-      // Connect the client to the server
-      await client.connect();
-      // Establish and verify connection
-      const database = await client.db("shopify");
-      const test = database.collection('test');
-      const cart = await test.findOne({});
-      console.log(cart);
-      console.log("Connected successfully to server");
-    } finally {
-      // Ensures that the client will close when you finish/error
-      await client.close();
-    }
-  }
-  run().catch(console.dir);
+const prepare = (o) => {
+    o._id = o._id.toString()
+    return o
+};
+
+const toObjectId = (_id) => {
+    return  ObjectId(_id)
+};
+
+
   
+
+  // connection
+	const conn = mongoose.createConnection(mongoURI, {
+	  useNewUrlParser: true,
+	  useUnifiedTopology: true
+	});
+    // Create storage engine
+var filename;
+const storage = new GridFsStorage({
+    url: mongoURI,
+    file: (req, file) => {
+      return new Promise((resolve, reject) => {
+        crypto.randomBytes(16, (err, buf) => {
+          if (err) {
+            return reject(err)
+          }
+          filename = file.originalname;
+          const fileInfo = {
+            filename: filename,
+            bucketName: 'uploads',
+          };
+          resolve(fileInfo);
+        })
+      })
+    },
+  });
+
+  const upload = multer({ storage });
+
+	// init gfs
+	let gfs;
+	conn.once("open", () => {
+	  // init stream
+	  gfs = new mongoose.mongo.GridFSBucket(conn.db, {
+		bucketName: "uploads"
+	  });
+	});
+  
+let products;
+
+async function run() {
+  try {
+    // Connect the client to the server
+    await client.connect();
+    // Establish and verify connection
+    const database = await client.db("shopify");
+    const productsList = database.collection('products');
+    products = await productsList.find({}).toArray();
+    console.log("Connected successfully to server");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
+run().catch(console.dir);
+
 app.use(express.static('public'));
 app.use('/js',express.static(path.join(__dirname,"js")));
-app.use(bodyParser());
-/*set up your session secret here*/app.use(session({ secret : "secret"}));
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
+/*set up your session secret here*/
+app.use(session({ secret : "secret"}));
+app.post("/addPicture", upload.single("file"),async (req, res,err) => {
+   
+    await client.connect();
+    // Establish and verify connection
+    const database = await client.db("shopify");
+    const productsList = database.collection('products');
+    let newPost = { 
+        name : req.body.name, 
+        description : req.body.description, 
+        price : req.body.price,
+        pic: filename
+    };
+    let products = productsList.insertOne(newPost);
+    filename = null;
+    console.log("hello world");
+    
+  }).get('/watch/:filename',(req,res) => {
+
+    res.render("watch",{ filename : "http://localhost:3000/image/"+ req.params.filename  });
+
+  });
 app.get('/',(req,res) => {
 
     let n = req.session.items ? req.session.items.length : 0;
     res.render("index",{ products : products, n : n });
+
+}).get("/image/:filename", (req, res) => {
+  const file = gfs.find({ filename: req.params.filename })
+    .toArray((err, files) => {
+      if (!files || files.length === 0) {
+      return res.status(404).json({
+              err: "no files exist"
+            });
+       }
+      gfs.openDownloadStreamByName(req.params.filename).pipe(res);
+    });
+})
+.get("/login",(req,res) => {
+
+    res.render("login");
+
+}).post("/login",(req,res) => {
+    res.render("home",{ n : 2 });
 
 }).get("/p",(req,res) => {
 
@@ -79,7 +174,8 @@ app.get('/',(req,res) => {
     res.redirect("/");
 
 });
-/*start your server here --->*/app.listen(3000,() => {
+/*start your server here --->*/
+app.listen(3000,() => {
     console.log("welcome!!!");
 });
 

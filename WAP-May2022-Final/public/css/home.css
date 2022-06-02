@@ -1,0 +1,33 @@
+#home{
+    display: grid;
+    grid-template-areas:
+    "h h h h h"
+    "n n n n n"
+    "s b b b e"
+    "s b b b e"
+    "s b b b e"
+    "s b b b e"
+    "f f f f f"
+    "c c c c c";
+    background-color: #fff;
+    color: #1d1d1d;
+    font-family: Questrial,sans-serif;
+}
+#header {
+    grid-area : h;
+}
+#nav {
+    grid-area : n;
+}
+#core{
+    grid-area: b;
+    position: relative;
+    left : 30%;
+    width : 60%;
+}
+#side {
+    grid-area : s;
+}
+#zoningImage {
+    width : 100%;
+}

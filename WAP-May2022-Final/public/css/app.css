@@ -1,0 +1,354 @@
+
+body {
+    color: #0a0e7b;
+  }
+  .App {
+    font-family : "Trebuchet MS", Verdana, sans-serif;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  .header-paragraph {
+    font-weight : bold;
+    font-size : 120%;
+  }
+  .label-survey-index {
+    display : inline-block;
+    width : 4%;
+  }
+  .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .reporting-frame {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    z-index: 80;
+    position : fixed;
+    width: 33%;
+    right : 2%;
+    top : 7%;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+  }
+  .rating-bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgb(183, 155, 229);
+    border-radius: 5px;
+  }
+  .excellent-rating-bar {
+    background-color: rgb(9, 243, 118);
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+  } 
+  .good-rating-bar {
+    background-color: rgb(95, 243, 10);
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .average-rating-bar {
+    background-color: rgb(243, 227, 10);
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+  } 
+  .bad-rating-bar {
+    background-color: rgb(240, 136, 9);
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+  } 
+  .worst-rating-bar {
+    background-color: rgb(249, 18, 6);
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .inner-rating-bar {
+    background-color: rgba(103, 58, 183, 1);
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .label-inline-block {
+    display : inline-block;
+  }
+  .label-block {
+    display : inline-block;
+    width : 35%;
+  }
+  .log-invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+  .sign-up-form {
+    position : absolute;
+    top : 15%;
+    left : 35%;
+    width : 90%;
+  }
+  .sign-in-form {
+    position : absolute;
+    top : 25%;
+    left : 35%;
+    width : 90%;
+  }
+  .btn-sign-in {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(240, 242, 245);
+    background-color: #0a0e7b;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .survey-frame {
+    z-index : 50;
+      background-color : white;
+      position : fixed;
+      top : 1%;
+      left : 27.5%;
+      width : 45%;
+      height : 90%;
+      padding : 2%;
+      border-radius: 0.5%;
+  }
+  .survey-inner-body {
+    position : absolute;
+    background-color:  white;
+    width: 92%;
+    height: 82%;
+    overflow: visible;
+    overflow: auto;
+    font-family : "Trebuchet MS", Verdana, sans-serif;
+    font-size: 0.775em;
+  }
+  .survey-footer {
+    position : absolute;
+    bottom : 1%;
+  }
+  .star-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .on {
+    color: #000;
+  }
+  .off {
+    color: #ccc;
+  }
+  .white-back-ground {
+    background-color: #fff;
+  }
+  .sticky-frame {
+    position : sticky;
+    z-index : 10;
+    top : 0%;
+  }
+  .top-frame {
+    top : 6.5%;
+    background-color: #fff;
+    width: 100%;
+  }
+  .footer-frame {
+    position : absolute;
+    bottom : 7%;
+    font-size: 0.7rem;
+    width : 50%;
+    left : 25%;
+    text-align:  center;
+  }
+  .input-label-sign-up {
+    display : inline-block;
+    width : 12%;
+  }
+  .button-submit-sign-up {
+    width: 16%;
+    left : 100%;
+    background-color: #0a0e7b;
+    display: block;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(240, 242, 245);
+    background-color: #0a0e7b;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn { 
+    border: 1px solid #0a0e7b;
+    background-color: white;
+    color: #0a0e7b;
+    margin-right : 0.4%;
+  }
+ 
+  .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
+    color: #28a745;
+  }
+  .invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+  .form-control-sign-up {
+    display : inline-block;
+    width: 20%;
+    height: calc(1.9rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .comment-content {
+    width: 80%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .tittle-writing-log-in {
+    font-size: 150%;
+    position : fixed;
+      top : 15%;
+      left : 35%;
+      height : 35%;
+    align-items: center;
+  }
+  .tittle-writing {
+    font-size: 330%;
+    position : fixed;
+      top : 25%;
+      left : 35%;
+      height : 35%;
+    align-items: center;
+  }
+  .search-space {
+    position : fixed;
+    width : 50%;
+      top : 45%;
+      left : 25%;
+      height : 35%;
+  
+  }
+  .log-in-modal {
+    position : fixed;
+      left : 0%;
+      top : 0%;
+      width : 100%;
+      height : 100%;
+      background-color : black;
+      opacity : 0.6;
+      z-index : 30;
+  }
+  .log-in-form-on-modal {
+      background-color : white;
+      position : absolute;
+      top : 1%;
+      left : 27.5%;
+      width : 45%;
+      padding : 2%;
+      border-radius: 0.5%;
+      z-index : 40;
+  }
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .rating-stars {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  
+  .rating-stars .star {
+    display: inline-block;
+    padding: 0 2px;
+    font-size: 2.5em;
+    color: #ccc;
+    transition: 0.1s all ease-in-out;
+    transform: scale(0.8);
+  }
+  .rating-stars .star:hover,
+  .rating-stars .star.semi-active {
+    color: #ffd73e;
+    transform: scale(1);
+  }
+  
+  .rating-stars .star.active {
+    color: #FF9800;
+    transform: scale(1);
+  }
+  
+  
+  /* Rating Message */
+  .after-rating-message {
+    display: none;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px 20px;
+    background-color: #f7f7f7;
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+  }
+  .star-rating {
+    display : inline-block;
+  }
+  .after-rating-message.show {
+    display: block;
+    opacity: 1;
+  }
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
