@@ -1,6 +1,3 @@
-const req = require('express/lib/request');
-const res = require('express/lib/response');
-const path = require("path");
 
 const crypto = require("crypto");
 const mongoose = require("mongoose");
@@ -11,15 +8,13 @@ const http = require("http");
 const fs = require("fs");
 const url = require("url");
 const cors = require("cors");
-const formidable = require('formidable');
+const path = require("path");
 
 /*import express here --->*/ 
 const express = require("express");
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const { MongoClient } = require("mongodb");
-/*import product here --->*/
-const product = require("./product");
 
 const mongoURI = "mongodb://localhost:27017";
 const client = new MongoClient(mongoURI);
@@ -37,44 +32,52 @@ const toObjectId = (_id) => {
 };
 
 
-  
+app.use(express.static('public'));
+app.use('/js',express.static(path.join(__dirname,"js")));
+app.use(express.urlencoded());
+app.use(express.json());
+app.use(express.raw());
+/*set up your session secret here*/
+app.use(session({ secret : "secret"}));
+// app.use(express.urlencoded()); 
 
-  // connection
-	const conn = mongoose.createConnection(mongoURI, {
-	  useNewUrlParser: true,
-	  useUnifiedTopology: true
-	});
-    // Create storage engine
+// connection
+const conn = mongoose.createConnection(mongoURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+// Create storage engine
 var filename;
+
 const storage = new GridFsStorage({
-    url: mongoURI,
-    file: (req, file) => {
-      return new Promise((resolve, reject) => {
-        crypto.randomBytes(16, (err, buf) => {
-          if (err) {
-            return reject(err)
-          }
-          filename = file.originalname;
-          const fileInfo = {
-            filename: filename,
-            bucketName: 'uploads',
-          };
-          resolve(fileInfo);
-        })
-      })
-    },
+  url: mongoURI,
+  file: (req, file) => {
+    return new Promise((resolve, reject) => {
+      crypto.randomBytes(16, (err, buf) => {
+        if (err) {
+          return reject(err)
+        }
+        filename = file.originalname;
+        const fileInfo = {
+          filename: filename,
+          bucketName: 'uploads',
+        };
+        resolve(fileInfo);
+      });
+    });
+  },
+});
+
+const upload = multer({ storage });
+
+// init gfs
+let gfs;
+conn.once("open", () => {
+  // init stream
+  gfs = new mongoose.mongo.GridFSBucket(conn.db, {
+    bucketName: "uploads"
   });
-
-  const upload = multer({ storage });
-
-	// init gfs
-	let gfs;
-	conn.once("open", () => {
-	  // init stream
-	  gfs = new mongoose.mongo.GridFSBucket(conn.db, {
-		bucketName: "uploads"
-	  });
-	});
+});
   
 let products;
 
@@ -94,18 +97,13 @@ async function run() {
 }
 run().catch(console.dir);
 
-app.use(express.static('public'));
-app.use('/js',express.static(path.join(__dirname,"js")));
-app.use(bodyParser.urlencoded());
-app.use(bodyParser.json());
-/*set up your session secret here*/
-app.use(session({ secret : "secret"}));
 app.post("/addPicture", upload.single("file"),async (req, res,err) => {
    
     await client.connect();
     // Establish and verify connection
     const database = await client.db("shopify");
     const productsList = database.collection('products');
+
     let newPost = { 
         name : req.body.name, 
         description : req.body.description, 
@@ -114,9 +112,8 @@ app.post("/addPicture", upload.single("file"),async (req, res,err) => {
     };
     let products = productsList.insertOne(newPost);
     filename = null;
-    console.log("hello world");
-    
-  }).get('/watch/:filename',(req,res) => {
+  })
+  .get('/watch/:filename',(req,res) => {
 
     res.render("watch",{ filename : "http://localhost:3000/image/"+ req.params.filename  });
 

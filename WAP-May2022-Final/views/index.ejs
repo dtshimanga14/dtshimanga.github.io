@@ -23,7 +23,7 @@
         <div id="body">
             <%for(let i in products){%>
               <a id="listing" href=<%="/p?pnumber="+i%>>
-                <img id="icon" src=<%=products[i].pic%>>
+                <img id="icon" src=<%="/image/"+products[i].pic%>>
                 <p><%=products[i].name%></p>
                 <p>$<%=products[i].price%></p>
               </a>
