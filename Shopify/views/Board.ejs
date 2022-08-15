@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Store</title>
+    <link rel="stylesheet"  href="./css/style.css">
+  </head>
+  <body>
+    <div id="container">
+        <%- include ('header.ejs') %>
+        <%- include ('navigation.ejs') %>
+        <div id="body">
+            <%for(let i in products){%>
+                <a id="listing" href=<%="/p?pnumber="+i%>>
+                    <img id="icon" src=<%="/image/"+products[i].pic%>>
+                    <p><%=products[i].name%></p>
+                    <a id="listing" href=<%="/remove/"+products[i]._id%>>
+                        <button>remove </button>
+                    </a>
+                </a>
+            <%}%>
+        </div>
+        <%- include ('footer.ejs') %>
+        <%- include ('copyright.ejs') %>
+    </div>
+  </body>
+</html>

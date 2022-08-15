@@ -1,0 +1,31 @@
+
+.wit-flex-box{
+	position: relative;
+	width : 100%;
+}
+.pre-viewing-image{
+	position: relative;
+	width : 100%;
+}
+.chats-zone{
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	z-index: 900;
+	position: fixed;
+	right: 11%;
+	bottom: 0.5%;
+	width :44%;
+	height: 47%;
+}
+.home-frame{
+	position: relative;
+	left: 13.5%;
+	top : 65px;
+	width : 41.5%;
+}
+
+.uploadFile{
+	display : none;
+}

@@ -1,0 +1,129 @@
+
+.add-user-button{
+	position : relative;
+	left : 40%;
+	font-size : 1.5em;
+}
+.ca-field{
+	font-family : 'BadScript-Regular';
+}
+.core-courses{
+	position : fixed;
+	background-color : white;
+	width :  25%;
+	left : 74%;
+	top : 19%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2),0 2px 5px 0 rgba(0,0,0,0.19);
+}
+.fields-icon-layer{
+	position : relative;
+	left : -10%;
+	border-radius : 50%;
+	font-size : 0.6em;
+	display : inline;
+	z-index : 500;
+	width : 13px;
+	height : 13px;
+	text-align : center;
+	color : white;
+	background-color : red;
+}
+.from-year{
+	position : relative;
+	left : 8%;
+	color : gray;
+	font-weight : 200;
+}
+.header-field{
+	font-family : 'Barlow-Regular';
+	font-weight : bold;
+}
+.icon-right-flex{
+	position : relative;
+	top : 54%;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.one-field{
+	margin : 2%;
+	padding : 2%;
+	border-bottom : 1px solid #ddd;
+}
+.option{
+	position : relative;
+	left : 2%;
+}
+.option-text{
+	font-family : 'Barlow-MediumItalic';
+}
+.teachers-course-frame{
+	text-align: center;
+	font-family: 'Comic Sans MS';
+	position: absolute;
+	padding: 4%;
+	bottom: 3%;
+}
+.teacher-main-frame{
+	display: flex;
+	justify-content: center;
+    width: 50%;
+    height: 800px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top : 16%;
+    left: 25%;
+}
+.teachers-name{
+	text-align: center;
+	font-family: 'Quicksand', cursive;
+	font-size: 1.2em;
+}
+.teacher-image{
+	position: absolute;
+	top :20%;
+	left :17.5%;
+	width : 65%;
+	border-radius: 50%;
+}
+.teacher-single-frame{
+	border-bottom : 2px solid black transparent;
+	background-color : white;
+	border-radius : 5px;
+	margin-bottom : 7%;
+	width : 25%;
+	height : 30%;
+	margin : 0.4%;
+	display : inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	position : relative;
+}
+.text-button{
+	position : relative;
+	left : 5%;
+}
+.sort-teachers-label{
+	font-family: 'Verdana';
+	font-size: bold;
+	z-index: 900;
+	position: fixed;
+	top: 12%;
+	left :71%;
+}
+.yardstick-frame{
+	background-color: white;
+	width: 79%; 
+	height : 5.5%; 
+	position: fixed;
+	z-index: 150;
+	top: 11%;
+	left :20%;
+	border-radius : 2%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.yardstick-options-frame{
+	font-family: 'Trebuchet MS';
+	position: relative;
+	left: 72%;
+}

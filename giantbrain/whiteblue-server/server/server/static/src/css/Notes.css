@@ -1,0 +1,30 @@
+
+.course-quotation{
+	font-family: 'Niramit';
+	font-size : 1.17em;
+	font-weight : bold;
+}
+.assess-quotation{
+	position : relative;
+	left : 10%;
+}
+.note-cote{
+	position : absolute;
+	left : 60%;
+}	
+.note-topic{
+	font-family : 'Caveat-Regular';
+}
+.view-courses{
+	font-family : 'Caveat-Regular';
+	position : relative;
+	left : 60%;
+}
+.date-quotation{
+	position : absolute;
+	left : 80%;
+}
+.note-quotation{
+	position : absolute;
+	left : 40%;
+}

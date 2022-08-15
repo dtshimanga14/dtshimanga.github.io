@@ -1,0 +1,106 @@
+
+
+.add-book{
+	position : relative;
+	left : 40%;
+}
+.basket-book-author{
+	font-family : 'BadScript-Regular';
+}
+.basket-book-frame{
+	margin : 1%;
+	padding : 1%;
+	border-bottom : 1px solid #ddd;
+}
+.basket-book-tittle{
+	position : absolute;
+	width : 70%;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+}
+.book-frame{
+	border-bottom : 2px solid black transparent;
+	background-color : white;
+	border-radius : 5px;
+	margin-bottom : 1%;
+	width : 21%;
+	height : 33%;
+	margin : 0.4%;
+	display : inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	position : relative;
+}
+.book-history-head{
+	font-size : 1.3em;
+}
+.bookmarked-date{
+	font-family : 'Caveat-Regular';
+	color : black;
+}
+.booksMarked-rendered{
+	font-family: 'Nunito';
+	font-weight: bold;
+	font-style: bold;
+	text-align: left;
+	font-size: 1em;
+}
+.bookmarked-store{
+	background-color : white;
+	position: fixed;
+	border-radius : 1%;
+	overflow: auto;
+	width: 22%;
+	padding : 1%;
+    top : 18%;
+    left: 77.1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.book-store{
+	display: flex;
+	justify-content: center;
+    width: 65%;
+    height: 800px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top : 18%;
+    left : 15.5%;
+}
+.frame-book-store{
+	background-color: white;
+	position: fixed;
+	z-index: 100;
+	top : 11%;
+	width : 80%;
+    left : 20%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.icon-search-book{
+	position : relative;
+	left : 50%;
+}
+.library-trash-btn{
+	position : relative;
+	float : right;
+}
+.text-button{
+	position : relative;
+	left : 5%;
+}
+.yardstick-books-frame{
+	position: fixed;
+	top: 11%;
+	left :40%;
+}
+
+
+.book-picture{
+	position: absolute;
+	width : 100%;
+    height: 80%;
+}
+.read-button{
+	position: relative;
+	top :78%;
+}

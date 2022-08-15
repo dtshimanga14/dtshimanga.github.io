@@ -1,0 +1,15 @@
+.header-names{
+
+}
+.add-pencil-button{
+	position : absolute;
+	left : 55%;
+}
+.add-requester-button{
+	position : absolute;
+	left : 50%;
+}
+.add-calendar-button{
+	position : absolute;
+	left : 45%;
+}

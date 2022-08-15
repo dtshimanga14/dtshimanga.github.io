@@ -1,0 +1,54 @@
+
+.top-bar{
+	background-color: white;
+	width: 79%; 
+	height : 5.5%; 
+	position: fixed;
+	z-index: 150;
+	top: 11%;
+	left :20%;
+	border-radius : 2%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.bills-main-frame{
+	background-color: white;
+    position: absolute;
+    top : 15%;
+    left: 21%;
+    width: 50%;
+	border-radius : 1%;
+	margin : 2%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2),0 1.5px 3px 0 rgba(0,0,0,0.19);
+}
+.summary-bill{
+	text-transform : lowercase;
+	font-family : 'HindGuntur-Light';
+	font-size : 1.1em;
+	margin-left : 3%;
+	margin-top : 1.5%;
+	margin-bottom : 1.5%;
+}
+.destinator-bill{
+	margin-right : 1.2%;
+}
+.owner-bill{
+	margin-left : 1.2%;
+}
+.save-bill{
+	display : inline-block;
+	width : 8%;
+	position : relative;
+	left : 90%;
+}
+.tittle-billing{
+	margin : 1.5%;
+	margin-bottom : 0.5%;
+	font-family : 'DidactGothic-Regular';
+	font-size : 1.3em;
+	font-weight : bold;
+}
+.date-billing{
+	margin : 0.5%;
+	font-weight : bold;
+	text-align : center;
+}

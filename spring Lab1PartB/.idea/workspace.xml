@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b307145-cc4e-4a13-9ed3-f1c922c3d112" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_aspectj_aspectjrt_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_springframework_spring_aop_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_springframework_spring_beans_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_springframework_spring_context_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_springframework_spring_core_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_springframework_spring_expression_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/Lab1PartA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/ICustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/IEmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/ILogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/java/customers/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/src/main/resources/springconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/CustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/EmailSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/ICustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/ICustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/IEmailSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/ILogger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/customers/Logger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring beans/target/classes/springconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_aspectj_aspectjrt_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_springframework_spring_aop_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_springframework_spring_beans_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_springframework_spring_context_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_springframework_spring_core_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_springframework_spring_expression_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/spring Lab1PartB.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_aspectj_aspectjrt_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_aop_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_beans_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_context_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_core_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_expression_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/Exercise1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/Lab1PartA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/ICustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/IEmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/ILogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/java/customers/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/src/main/resources/springconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/CustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/EmailSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/ICustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/ICustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/IEmailSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/ILogger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/customers/Logger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring classpath/spring project Lab1PartA/target/classes/springconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_aspectj_aspectjrt_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_aop_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_beans_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_context_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_core_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_expression_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/Lab1PartA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/ICustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/IEmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/ILogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/java/customers/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/src/main/resources/springconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/CustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/EmailSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/ICustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/ICustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/IEmailSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/ILogger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/customers/Logger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config spring java config/spring project Lab1PartA/target/classes/springconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAP-May2022-Final/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WAP-May2022-Final/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAP-May2022-Final/views/cart.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../WAP-May2022-Final/views/cart.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WAP-May2022-Final/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../WAP-May2022-Final/views/home.ejs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ArwfYbFLZDt3seFNicWeYFJxim" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/dtshi/Documents/GitHub/dtshimanga.github.io/config spring java config"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="customers.Application" />
+      <module name="Exercise1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="customers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b307145-cc4e-4a13-9ed3-f1c922c3d112" name="Changes" comment="" />
+      <created>1655781115489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655781115489</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
