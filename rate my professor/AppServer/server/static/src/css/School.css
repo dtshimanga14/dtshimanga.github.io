@@ -1,0 +1,69 @@
+
+.schools-map{
+	position : fixed;
+	background-color : white;
+	width :  25%;
+    height: 75%;
+	left : 74%;
+	top : 12%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2),0 2px 5px 0 rgba(0,0,0,0.19);
+}
+.map-school-frame{
+    position: fixed;
+    width: 50%;
+    top : 18%;
+    left: 21%;
+}
+.school-frame{
+	display : flex;
+	flex-direction : row;
+    position: relative;
+    height: 25%;
+	background-color: white;
+	border-bottom : solid gray;
+}
+.details-school{
+	margin : 1%;
+	padding : 2%;
+}
+.asset-cursus-offer{
+	font-family : "ArchitectsDaughter-Regular";
+	font-size : 1.2em;
+}
+.header-cursus-offer{
+	font-family : "EBGaramond-Medium";
+	font-size : 1.6em;
+	font-weight : bold;
+}
+.header-school{
+	font-family : "Cinzel-Bold";
+	font-size : 1.5em;
+}
+.gallery-school{
+    width: 40%;
+	height : 60%;
+	
+}
+.school-main-frame{
+	display: flex;
+	justify-content: center;
+    padding: 5%;
+    width: 50%;
+    height: 800px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top : 10%;
+    left: 10%;
+}
+.filter-bar-schools{
+	background-color: white;
+	width: 50%; 
+	height : 5.5%; 
+	position: fixed;
+	z-index: 150;
+	top: 11%;
+	left :20%;
+	border-radius : 1%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2),0 3px 5px 0 rgba(0,0,0,0.19);
+}

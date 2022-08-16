@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style></style>
+	</head>
+	<body >
+	  <div id="open_call_state">
+			hello websocket's world 
+	  </div>
+	  <button id="logout">exit</button>
+	  <div id="open_connection">
+	  </div>
+	  <div id="open_call_state">
+		<video id="remote_video"></video>
+		<video id="local_video"></video>
+	  </div>
+	  <div >
+		  <form action="/single" method="post" enctype="multipart/form-data">
+			<input type="file" name="profile"><br>
+			<input type="submit">
+		  </form>
+	  </div>
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script >
+		var socket = io.connect("http://localhost:8080");
+		var login = document.getElementById("open_connection");
+		socket.on("message",function(text){
+			login.innerHTML = text;
+		});
+		socket.on("login",function(text){
+			alert(text)
+		});
+		var exitBtn = document.getElementById("logout");
+		exitBtn.addEventListener('click',function(){
+			socket.emit("logout","bye bye");
+		},false);
+	</script>
+</html>

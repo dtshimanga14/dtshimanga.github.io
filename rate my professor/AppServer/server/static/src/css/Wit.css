@@ -1,0 +1,57 @@
+
+.author-text{
+	padding : 1%;
+	text-align: left;
+	font-family : 'Caveat-Regular';
+}
+.group-btn-wit{
+	display: flex;
+	justify-content: flex-start;
+}
+.next-wit{
+	position: relative;
+	top :60%;
+	padding: 1%;
+}
+.previous-wit{
+	position: relative;
+	top :50%;
+	padding: 4%;
+}
+.text-button{
+	position : relative;
+}
+.wit-authors{
+	font-family : 'Caveat-Regular';
+}
+.wit-approvaler{
+	font-family : 'Caveat-Regular';
+	float: right;
+	left :30%;
+}
+.wit-content{
+	
+}
+.wit-core{
+    font-family: 'Indie Flower', cursive;
+}
+.wit-flex-box{
+	
+	display : flex;
+	justify-content : flex-start;
+    flex-wrap: nowrap;
+}
+.wit-field{
+
+}
+.wit-frame{
+	background-color : white;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 3px 5px 0 rgba(0,0,0,0.19);
+	padding : 1%;
+	border-radius: 0.5%;
+}
+.wit-header{
+	text-align: center;
+	font-family: 'Verdana';
+	font-size : 1.2em;
+}

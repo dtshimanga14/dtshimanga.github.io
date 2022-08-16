@@ -1,0 +1,161 @@
+Feedbacks reporting
+*******************
+method : post 
+-------
+By : professorId
+
+{
+        professorId : 12,
+        courseId : 1,
+        totalFeedbacks : 100,
+        averageRate : 3,
+        excellent : 24,
+        good : 40,
+        average : 30,
+        bad : 5,
+        worst : 1,
+        questIdOne : {
+          questId : 1,
+          question : "Contribution of course to your skill/knowledge ?",
+          Poor : 12, Fair : 12, Satisfactory : 12, veryGood : 12, Excellent : 12
+        },
+        questTwo : {
+          questId : 1,
+          question : "Skill and responsiveness of the instructor ?",
+          Excellent : 12, good : 12, average : 12, poor : 12, worst : 12
+        },
+        questThree : {
+          questId : 1,
+          question : "Course content is organized and well planned ? ?",
+          stronglyAgree : 12, good : 12, average : 12, poor : 12, worst : 12
+        },
+        questFour : {
+          questId : 1,
+          question : "Course workload is appropriate ?",
+          stronglyAgree : 12, Agree : 12, Neutral : 12, Disagree : 12, stronglyDisagree : 12
+        },
+        questFive : {
+          questId : 1,
+          question : "Course is organized to allow all students to participate fully ?",
+          stronglyAgree : 12, Agree : 12, Neutral : 12, Disagree : 12, stronglyDisagree : 12
+        }
+    };
+
+
+
+
+like a feedback
+***************
+
+method : post
+-------------
+
+{
+  feedBackId : 1,
+  thumbsUp : ++,
+  isThumbsUp : true,
+}
+
+1. survey questions 
+****************
+
+method : get
+------------
+
+const questions = [
+    {
+      question : "Contribution of course to your skill/knowledge ?",
+      asserts : ["Poor", "Fair", "Satisfactory","Very good","Excellent"],
+      answers : "",
+      type : "MC",
+      id : 1
+    },
+  {
+    question : "Skill and responsiveness of the instructor ?",
+    asserts : ["Excellent", "good", "average","poor","worst"],
+    answers : "",
+    type : "MC",
+    id : 2
+  },
+  {
+    question : "Course content is organized and well planned ?",
+    asserts : ["Strongly agree", "Agree", "Neutral","Disagree" ,"Strongly disagree"],
+    answers : "",
+    type : "MC",
+    id : 3
+  },
+  {
+    question : "Course workload is appropriate ?",
+    asserts : ["Strongly agree", "Agree", "Neutral","Disagree" ,"Strongly disagree"],
+    answers : [""],
+    type : "MC",
+    id : 4
+  },
+  {
+    question : "Course is organized to allow all students to participate fully ?",
+    asserts : ["Strongly agree", "Agree", "Neutral","Disagree" ,"Strongly disagree"],
+    answers : [""],
+    type : "MC",
+    id : 5
+  },
+  {
+    question : "What aspects of this course are most useful or valuable ?",
+    asserts : [""],
+    answers : "",
+    type : "SA",
+    id : 6
+  },
+  {
+    question : "Anything else you want to share?... feel free to express yourself ?",
+    asserts : [""],
+    answers : "",
+    type : "SA",
+    id : 7
+  }
+];
+
+
+
+2. student survey reply
+***********************
+method : post
+-------------
+{
+  studentId: '614243',
+  overAllRate: 4,
+  questions: [
+    {
+      questId: 1,
+      courseId: '',
+      answers: 'Very good',
+      type: 'MC'
+    },{
+      questId: 2,
+      courseId: '',
+      answers: 'bad',
+      type: 'SA'
+    }
+  ]
+}
+
+
+3. sign up 
+**********
+
+method : post
+------------
+
+data to store : 
+--------------
+{
+  userName: 'tera',
+  lastName: 'tera',
+  studentId: '614243',
+  email: 'atera@miu.edu',
+  phoneNumber: '+1 641 8192627',
+  university: 'Maharishi international University',
+  pwd: 'tera'
+}
+
+data to return : token
+----------------------
